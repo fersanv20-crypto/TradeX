@@ -1,0 +1,4 @@
+# Render / Heroku-style process (optional if you set startCommand in render.yaml instead).
+
+web: uvicorn main:app --host 0.0.0.0 --port ${PORT:-10000} --proxy-headers --forwarded-allow-ips '*'
+

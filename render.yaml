@@ -1,0 +1,23 @@
+# TradeX API on Render (https://render.com)
+# Blueprint: New → Blueprint → paste this repo path to `render.yaml`.
+# After deploy, set secrets in the Render dashboard: TRADEX_JWT_SECRET, TRADEX_EXCHANGE_FERNET_KEY (if using exchange),
+# and TRADEX_CORS_ORIGINS to your frontend origin(s), e.g. https://your-app.vercel.app
+
+services:
+  - type: web
+    name: tradex-api
+    runtime: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    # Render injects PORT; --proxy-headers helps when TLS terminates at the edge.
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips '*'
+    healthCheckPath: /health
+    envVars:
+      - key: TRADEX_ENVIRONMENT
+        value: production
+      - key: TRADEX_LOG_LEVEL
+        value: INFO
+      - key: TRADEX_CORS_ALLOW_VERCEL_HOSTS
+        value: "true"
