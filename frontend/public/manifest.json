@@ -1,0 +1,9 @@
+{
+  "name": "TradeX — Paper trading",
+  "short_name": "TradeX",
+  "description": "TradeX — AI-assisted paper trading: live charts, bot modes, backtests, portfolio, and chat.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#7c3aed"
+}
