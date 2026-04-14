@@ -1,7 +1,7 @@
-import { AutoTradingPanel } from "@/components/temp";
-import { DashboardLayout } from "@/components/DashboardLayout";
-import { PortfolioPanel } from "@/components/PortfolioPanel";
-import { PageHeader } from "@/components/ui/PageHeader";
+import AutoTradingPanel from "../../components/AutoTradingPanel";
+import DashboardLayout from "../../components/DashboardLayout";
+import PortfolioPanel from "../../components/PortfolioPanel";
+import PageHeader from "../../components/ui/PageHeader";
 
 export const dynamic = "force-dynamic";
 
