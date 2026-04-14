@@ -1,7 +1,7 @@
-import { AccountSummaryPanel } from "@/components/AccountSummaryPanel";
-import { DashboardLayout } from "@/components/DashboardLayout";
-import { SettingsDeploymentCard } from "@/components/SettingsDeploymentCard";
-import { PageHeader } from "@/components/ui/PageHeader";
+import DashboardLayout from "@/components/DashboardLayout";
+import PageHeader from "@/components/ui/PageHeader";
+import AccountSummaryPanel from "@/components/AccountSummaryPanel";
+import SettingsDeploymentCard from "@/components/SettingsDeploymentCard";
 
 export const dynamic = "force-dynamic";
 
