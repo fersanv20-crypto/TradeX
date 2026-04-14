@@ -1,4 +1,4 @@
-import { AutoTradingPanel } from "@/components/AutoTradingPanel";
+import { AutoTradingPanel } from "@/components/temp";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { PortfolioPanel } from "@/components/PortfolioPanel";
 import { PageHeader } from "@/components/ui/PageHeader";
