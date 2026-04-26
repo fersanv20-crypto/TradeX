@@ -1,11 +1,11 @@
-import { DashboardAtAGlance } from "@/components/DashboardAtAGlance";
-import { DashboardBotBar } from "@/components/DashboardBotBar";
-import { DashboardMarketChartArea } from "@/components/DashboardMarketChartArea";
-import { DashboardOnboardingBanner } from "@/components/DashboardOnboardingBanner";
-import { DashboardPaperOverview } from "@/components/DashboardPaperOverview";
-import { DashboardLayout } from "@/components/DashboardLayout";
-import { PaperEquityBar } from "@/components/PaperEquityBar";
-import { PageHeader } from "@/components/ui/PageHeader";
+import DashboardAtAGlance from "@/components/DashboardAtAGlance";
+import DashboardBotBar from "@/components/DashboardBotBar";
+import DashboardMarketChartArea from "@/components/DashboardMarketChartArea";
+import DashboardOnboardingBanner from "@/components/DashboardOnboardingBanner";
+import DashboardPaperOverview from "@/components/DashboardPaperOverview";
+import DashboardLayout from "@/components/DashboardLayout";
+import PaperEquityBar from "@/components/PaperEquityBar";
+import PageHeader from "@/components/ui/PageHeader";
 
 /** Auth + client charts: avoid static prerender edge cases in CI / Windows builds. */
 export const dynamic = "force-dynamic";

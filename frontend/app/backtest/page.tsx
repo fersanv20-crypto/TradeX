@@ -1,6 +1,6 @@
-import { DashboardLayout } from "@/components/DashboardLayout";
-import { BacktestRunner } from "@/components/BacktestRunner";
-import { PageHeader } from "@/components/ui/PageHeader";
+import DashboardLayout from "@/components/DashboardLayout";
+import BacktestRunner from "@/components/BacktestRunner";
+import PageHeader from "@/components/ui/PageHeader";
 
 export const dynamic = "force-dynamic";
 
